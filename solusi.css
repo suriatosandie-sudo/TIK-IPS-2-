@@ -1,0 +1,130 @@
+/* --- RESET & BODY --- */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f7f7f7;
+    margin: 0;
+}
+
+/* HEADER IMAGE */
+.header-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* --- TOP BUTTON AREA --- */
+.top-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+/* NORMAL BUTTON (HOME + BILATERAL) */
+.btn {
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.btn:hover {
+    background-color: #b71c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+}
+
+/* --- DROPDOWN BUTTON --- */
+.dropbtn {
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.dropbtn:hover {
+    background-color: #b71c1c;
+}
+
+/* DROPDOWN WRAPPER */
+.dropdown {
+    position: relative;
+}
+
+/* DROPDOWN LIST */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    border-radius: 8px;
+    width: 220px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 10;
+}
+
+/* ITEM-A */
+.dropdown-content a {
+    padding: 10px 14px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-content a:hover {
+    background: #f2f2f2;
+}
+
+/* SHOW DROPDOWN ON HOVER */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* --- IMAGE + TEXT LAYOUT --- */
+.content-row {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* LEFT IMAGE COLUMN */
+.image-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* IMAGE STYLE */
+.side-image {
+    width: 230px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+/* TEXT CONTENT BOX */
+.text-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    flex: 1;
+    line-height:1,5}

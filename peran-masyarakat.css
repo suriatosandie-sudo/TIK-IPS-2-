@@ -1,0 +1,183 @@
+/* ===== RESET SEDERHANA ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* BODY dasar (modul style: bersih, readable) */
+body {
+    font-family: Arial, sans-serif;
+    background: #f6f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* HEADER: gambar full-width */
+.site-header { width: 100%; margin: 0; }
+.header-img {
+    width: 100%;
+    height: 220px;       /* ubah jika mau lebih tinggi */
+    object-fit: cover;
+    display: block;
+}
+
+/* MAIN WRAP */
+.main-wrap {
+    width: 94%;
+    max-width: 1100px;
+    margin: 28px auto;
+}
+
+/* KARTU KONTEN */
+.content-card {
+    display: flex;
+    gap: 28px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+/* KOLOM KIRI: gambar dokumentasi (stack vertical) */
+.left-col {
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.left-col .doc-img {
+    width: 100%;
+    height: 150px;       /* semua gambar sama tinggi */
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #e6e6e6;
+}
+
+/* KOLOM KANAN: teks */
+.right-col {
+    width: 64%;
+    padding-right: 6px;
+}
+
+/* Judul & subjudul */
+.title {
+    font-size: 22px;
+    color: #DD1367; /* tema SDG 10 */
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.subhead {
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* paragraf isi */
+.right-col p {
+    margin-bottom: 12px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+/* penutup / highlight */
+.conclude {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* RESPONSIVE: di layar sempit, ubah ke satu kolom */
+@media (max-width: 780px) {
+    .content-card { flex-direction: column; padding: 16px; }
+    .left-col, .right-col { width: 100%; }
+    .left-col .doc-img { height: 160px; }
+    .header-img { height: 160px; }
+    .title { font-size: 20px; }
+}
+/* container drop-down */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* tombolnya */
+.dropbtn {
+    background-color: #ff5a5a;
+    color: white;
+    padding: 10px 16px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* isi dropdown (awal: hidden) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+/* styling link di dalam dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 10px 14px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
+
+/* muncul saat hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* tombol berubah saat hover */
+.dropdown:hover .dropbtn {
+    background-color: #e64646;
+}
+
+
+/* SHOW DROPDOWN SAAT HOVER */
+.home-btn {
+    background-color: rgb(198, 31, 131);
+    color: white;
+    padding: 10px 16px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* efek hover */
+.home-btn:hover {
+    background-color: rgb(232, 42, 159);
+}
+.bil-btn:hover:hover {
+    background-color: rgb(198, 31, 131);
+    color: white;
+    padding: 10px 16px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* efek hover */
+.bil-btn:hover:hover {
+    background-color: rgb(232, 42, 159);
+}
+
+
